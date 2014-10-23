@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	
+	<title>BSE Review</title>
+		
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+		
+</head>
+<body>
+	<nav>
+		<a href="/index.html">Reports</a> |
+		<a href="/reports.html">Reports</a>
+	</nav>
+	<br>
+	<br>
+	<h5> Input date in the following format example: 1-Oct-03 </h5>
+    <form action="date.php" method="post">
+        Date: <input type='text' name='date'>
+        <button class = "submit">submit</button>
+    </form>
+    <br>
+    <br>
+     <!--
+		 /*Create connection and query*/
+		 $conn = new mysqli("99webs.org", "milap", "test", "milap_test");
+            if (!mysqli_query($conn,"SELECT * FROM stocks
+                                        where open = '820.28'")) {
+                die('Error: ' . mysqli_error($conn));
+            }
+        $date = mysqli_real_escape_string($conn, $_POST['date']);
+            
+        $result = mysqli_query($conn,"SELECT * FROM stocks
+                                        where date = '$date'");
+        echo $date;
+         $row = mysqli_fetch_array($result);
+	     echo $row['high'];
+	     mysqli_close($conn);
+	-->
+
+</body>
+<footer>
+	<p>Sharpereturns.com created by Milap Naik and Niral Patel</p>
+</footer>
+</html>
