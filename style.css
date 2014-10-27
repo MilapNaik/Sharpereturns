@@ -13,14 +13,29 @@ body {
    
 }
 nav ul {
-    margin:0; 
-    padding:0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 900px;
     
 }
 nav ul li {
-    display:inline; 
-    margin:5px;
-    
+    list-style-type: none;
+    display: inline;
+    float: left;
+}
+
+nav a:link, a:visited {
+    /*display: block;*/
+    width: 135px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #0033CC;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 h3{
