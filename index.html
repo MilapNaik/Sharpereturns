@@ -7,12 +7,18 @@
 		
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 		
+	<!--[if lt IE 9]>
+  	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
 </head>
 <body>
 	<nav>
-		<a href="/index.html">Reports</a> |
-		<a href="/reports.html">Reports</a>
+	<ul>
+		<li><a href="/index.html">Home</a></li> |
+		<li><a href="/reports.html">Reports</a></li>
+	</ul>
 	</nav>
+	
 	<br>
 	<br>
 	<h5> Input date in the following format example: 1-Oct-03 </h5>
@@ -22,7 +28,6 @@
     </form>
     <br>
     <br>
-    pushed from cloud9
      <!--
 		 /*Create connection and query*/
 		 $conn = new mysqli("99webs.org", "milap", "test", "milap_test");
