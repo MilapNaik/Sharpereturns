@@ -9,7 +9,7 @@ body {
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 13px;
     line-height: 1.5em;
-    background-color: #262e34;
+    background-color: #FEFEF2; /*#262e34;*/
    
 }
 nav ul {
@@ -31,7 +31,7 @@ nav a:link, a:visited {
     width: 135px;
     font-weight: bold;
     color: #FFFFFF;
-    background-color: #FEFEF2; /*#0033CC;*/
+    background-color: #0033CC;
     text-align: center;
     padding: 4px;
     text-decoration: none;
