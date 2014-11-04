@@ -1,6 +1,6 @@
 function validateForm() {
-    var inputdate = document.form["date"].value;
-    var compdate = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;  
+    var inputdate = document.myForm["date"].value;
+    var compdate = /^\(?([0-9]{2})\)?[-. ]?([0-9]{2})[-. ]?([0-9]{4})$/;  
     
     if(inputdate.match(compdate))  {  
         return true; 

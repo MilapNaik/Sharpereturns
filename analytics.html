@@ -6,6 +6,7 @@
 	<title>BSE Review</title>
 		
 	<link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="validate.js"></script>
 	
 	<!--[if lt IE 9]>
   	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -23,13 +24,16 @@
 	<br>
 	<br>
 	
-	<section>
-	<ul>
-		<li><a href="/share.html">Share Economy</a></li>
-		<li><a href="/share.html">India</a></li>
-	</ul>
-    </section>
+	<h5> Input date in the following format example: 1-Oct-03 </h5>
+	
+    <form name = "myForm" action="date.php" onsubmit = "return validateForm()" method="post">
+        Date: <input type="text" name="date">
+        <button class = "submit">submit</button>
+    </form>
     
+    <br>
+    <br>
+
 </body>
 <footer>
 	<p>Sharpereturns.com created by Milap Naik and Niral Patel</p>
