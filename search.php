@@ -27,12 +27,32 @@
 	<br>
 	<br>
 	
-	<section>
-	<ul>
-		<li><a href="/modi">Modi</a></li>
-	</ul>
-    </section>
-    
+	<?php
+ 		$con=mysqli_connect("localhost", "milap", "test", "milap_test");
+        
+		// Check connection
+		if (mysqli_connect_errno()) {
+  			echo "Failed to connect to MySQL: " . mysqli_connect_error();
+		}
+		
+		$article = $_GET["article"];
+		
+		$select="Select * FROM articles WHERE article='$article'";
+		if (!mysqli_query($con,$select)) {
+  			die('Error: ' . mysqli_error($con));
+		}
+		else{
+			$result = mysqli_query($con, $select);
+			$row = mysqli_fetch_array($result);
+			
+			echo $row['article']; 
+			
+		}
+		
+		mysqli_close($con);
+	?>
+	
+
 </body>
 <footer>
 	<p>Sharpereturns.com created by Milap Naik and Niral Patel</p>
