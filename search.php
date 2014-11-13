@@ -28,7 +28,7 @@
 	<br>
 	
 	<?php
- 		$con=mysqli_connect("localhost", "milap", "test", "milap_test");
+ 		$con=mysqli_connect("localhost", "milap", "test", "milap_articles");
         
 		// Check connection
 		if (mysqli_connect_errno()) {
@@ -37,7 +37,7 @@
 		
 		$article = $_GET["article"];
 		
-		$select="Select * FROM articles WHERE article='$article'";
+		$select="Select * FROM articles WHERE articles='$article'";
 		if (!mysqli_query($con,$select)) {
   			die('Error: ' . mysqli_error($con));
 		}
