@@ -37,7 +37,7 @@
 		
 		$article = $_GET["article"];
 		
-		$select="Select * FROM articles WHERE articles='$article'";
+		$select="Select * FROM articles WHERE title='$article'";
 		if (!mysqli_query($con,$select)) {
   			die('Error: ' . mysqli_error($con));
 		}
