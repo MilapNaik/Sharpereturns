@@ -37,7 +37,7 @@
 		
 		$article = $_GET["article"];
 		
-		$select="Select content FROM articles WHERE title='$article'";
+		$select="Select * FROM articles WHERE title='$article'";
 		if (!mysqli_query($con,$select)) {
   			die('Error: ' . mysqli_error($con));
 		}
@@ -45,6 +45,7 @@
 			$result = mysqli_query($con, $select);
 			$row = mysqli_fetch_array($result);
 			
+			echo $row['title'];
 			echo $row['content']; 
 			
 		}
