@@ -113,3 +113,11 @@ footer {
     right: 0px;
     bottom: 0px;
 }
+
+#modi {
+    border: 1px solid black;
+}
+
+#navbar {
+    border: 1px solid blue;
+}
