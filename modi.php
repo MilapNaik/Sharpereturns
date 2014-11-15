@@ -35,6 +35,31 @@
 		style="width:228px;height:228px">
 	</section>
 	<section>
+	<?php
+ 		include('config.php');
+		
+		$select="Select title, linktitle FROM articles ";
+		
+		if (!mysqli_query($con,$select)) {
+  			die('Error: ' . mysqli_error($con)); //Add redirect page if broken
+		}
+		else{
+			$result = mysqli_query($con, $select);
+			$count = 1;
+			echo "<ul>", "/n";
+			while($row = mysqli_fetch_array($result)) {
+				
+				echo "<li><a href='search.php?article={$row['linktitle']}'>
+					  {$row['title']}</a></li>", "/n";
+				$count++;
+				
+            }
+            echo "</ul>", "/n";
+		}
+		
+		mysqli_close($con);
+	?>	
+	
 	<ul>
 		<li><a href="search.php?article=8PointModel">8-Point Model</a></li>
 		<li><a href="search.php?article=mycleanindia">My Clean India</a></li>
