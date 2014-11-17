@@ -28,12 +28,7 @@
 	<br>
 	
 	<?php
- 		$con=mysqli_connect("localhost", "milap", "test", "milap_articles");
-        
-		// Check connection
-		if (mysqli_connect_errno()) {
-  			echo "Failed to connect to MySQL: " . mysqli_connect_error();
-		}
+ 		include('config.php');
 		
 		$article = $_GET["article"];
 		
@@ -51,6 +46,8 @@
 		
 		mysqli_close($con);
 	?>
+	
+	
 	
 
 </body>
