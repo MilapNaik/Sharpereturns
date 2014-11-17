@@ -36,42 +36,36 @@
 	</section>
 	<section>
 	<?php
- 		//include('config.php');
-		$con=mysqli_connect("localhost", "milap", "test", "milap_articles");
-        
-		// Check connection
-		if (mysqli_connect_errno()) {
-  			echo "Failed to connect to MySQL: " . mysqli_connect_error();
-		}
+ 		include('config.php');
 		
 		$select="Select title, linktitle FROM articles ";
 		
-		if (!mysqli_query($con,$select)) {
-  			die('Error: ' . mysqli_error($con)); //Add redirect page if broken
+		if (!mysqli_query($dbC,$select)) {
+  			die('Error: ' . mysqli_error($dbC)); //Add redirect page if broken
 		}
 		else{
-			$result = mysqli_query($con, $select);
+			$result = mysqli_query($dbC, $select);
 			$count = 1;
 			echo "<ul>", "/n";
 			while($row = mysqli_fetch_array($result)) {
 				
-				echo "<li><a href='search.php?article={$row['linktitle']}'>
-					  {$row['title']}</a></li>", "/n";
+				echo "<li><a href='search.php?article={$row['title']}'>
+					  {$row['linktitle']}</a></li>", "/n";
 				$count++;
 				
             }
             echo "</ul>", "/n";
 		}
 		
-		mysqli_close($con);
+		mysqli_close($dbC);
 	?>	
 	
-	<ul>
+	<!--<ul>
 		<li><a href="search.php?article=8PointModel">8-Point Model</a></li>
 		<li><a href="search.php?article=mycleanindia">My Clean India</a></li>
 		<li><a href="search.php?article=arorafibers">Arora Fibers</a></li>
 
-	</ul>
+	</ul>-->
 	</section>
 	
 
