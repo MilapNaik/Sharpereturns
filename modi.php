@@ -46,15 +46,15 @@
 		else{
 			$result = mysqli_query($dbC, $select);
 			$count = 1;
-			echo "<ul>", "/n";
+			echo "<ul>", "\n";
 			while($row = mysqli_fetch_array($result)) {
 				
 				echo "<li><a href='search.php?article={$row['title']}'>
-					  {$row['linktitle']}</a></li>", "/n";
+					  {$row['linktitle']}</a></li>", "\n";
 				$count++;
 				
             }
-            echo "</ul>", "/n";
+            echo "</ul>", "\n";
 		}
 		
 		mysqli_close($dbC);
