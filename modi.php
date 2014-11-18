@@ -28,7 +28,7 @@
 	<br>
 	<aside id = "sidebar">
 		
-		<h2>Narendra Modi</h2>
+		<h2 text-align: "right">Narendra Modi</h2>
 		
 		<img src="pics/modi.jpg" id = "modi" alt="Narendra Modi"
 		style="width:228px;height:228px" padding: "0px">
