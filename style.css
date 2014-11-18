@@ -5,17 +5,18 @@ header, footer, aside, nav, section, main, article, figure {
 body {
     margin: 0;
     padding: 0;
+    color: #FFFFFF;
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 13px;
     line-height: 1.5em;
-    background-color: white;/*#FEFEF3;*/
+    background-color: #5b5b5b;/*#FEFEF3;*/
    
 }
 
 nav {
-    background-color: blue;
+    background-color: #333;
     width: 100%;
-    height: 1000px;
+    height: 30px;
     top: 0;
     position: fixed;
 }
@@ -31,7 +32,6 @@ nav ul li {
     list-style-type: none;
     display: inline;
     float: left;
-    font-family: Times;
 }
 
 nav a:link, 
@@ -50,10 +50,6 @@ nav a:visited {
 h3{ font-weight:bold; }
 h5{ font-style: italic; }
 p{ margin-left: 40px; }
-
-#home {
-    color: black;
-}
 
 #holders {
     /*Table in reports*/
@@ -118,3 +114,7 @@ footer {
     bottom: 0px;
 }
 
+#sidebar{
+    float: right;
+    width: 30%;
+}

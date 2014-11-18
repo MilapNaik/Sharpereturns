@@ -26,14 +26,26 @@
 	
 	<br>
 	<br>
-	<section>
+	<aside id = "sidebar">
+		
 		<h2>Narendra Modi</h2>
+		
+		<img src="pics/modi.jpg" id = "modi" alt="Narendra Modi"
+		style="width:228px;height:228px" padding: "0px">
+		<br>
+		<article>
 		Modi is the 15th Prime Minister of India and 
 		part of the BJP Party. He is formerly the 
-		chief Minister of the State of Gujarat.    
-		<img src="pics/modi.jpg" id = "modi" alt="Narendra Modi"
-		style="width:228px;height:228px">
-	</section>
+		chief Minister of the State of Gujarat. 
+		</article>
+		<br>
+		<h3>Related Stocks:</h3>
+		<ul>
+			<li> Arora Fiber</li>
+		</ul>
+		
+	</aside>
+	
 	<section>
 	<?php
  		include('config.php');
@@ -67,7 +79,7 @@
 
 	</ul>-->
 	</section>
-	
+	<br>
 
 </body>
 <footer>
