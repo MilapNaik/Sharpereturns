@@ -113,3 +113,25 @@ footer {
     border-left: 1px solid black;
     padding: 5px;
 }
+
+#outer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 606px;
+    height: 226px;
+    border: 1px solid black;
+}
+
+#inner{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 220px;
+    border: 3px solid #484848;
+}
+
+#center{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
