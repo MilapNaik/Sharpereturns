@@ -130,8 +130,8 @@ footer {
     border: 3px solid #484848;
 }
 
-#center{
+#title{
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid black;
+    width: 78px;
 }
