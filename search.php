@@ -6,7 +6,7 @@
 <meta name="keywords" content="Share Economy, India, Finance, Stocks,
 								Analysis, Uber, Lyft, TaskRabbit">
 <meta name="author" content="Milap Naik">	
-
+<link rel="shortcut icon" href="pics/favicon.ico">
 	<title>BSE Review</title>
 		
 	<link rel="stylesheet" type="text/css" href="style.css"/>
