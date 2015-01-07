@@ -114,6 +114,10 @@ footer {
     padding: 5px;
 }
 
+#ad{
+    float:right;
+}
+
 #outer{
     margin-left: auto;
     margin-right: auto;
